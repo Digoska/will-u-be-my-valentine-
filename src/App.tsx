@@ -12,22 +12,22 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "Nie",
-      "Si si istý?",
-      "Čo ak by som ťa pekne poprosil?",
-      "Prosím vás",
-      "S čokoládovým koláčom navyše",
-      "Čo tak matcha frostie",
-      "PROSÍM MILÁČKU",
-      "Ale :*(",
-      "Umriem",
-      "Áno som mŕtvy",
-      "ok rozprávam sa s Nathanovým duchom",
-      "prosím zlatko",
+      "No",
+      "Are you sure?",
+      "What if I asked really nicely?",
+      "Pretty please",
+      "With a chocolate rice cake on top",
+      "What about a matcha frostie",
+      "PLEASE POOKIE",
+      "But :*(",
+      "I am going to die",
+      "Yep im dead",
+      "ok ur talking to nathan's ghost",
+      "please babe",
       ":((((",
-      "PROSÍM TE VEĽMI",
-      "Estou muerto",
-      "Nie :(",
+      "PRETTY PLEASE",
+      "Estoy muerto",
+      "No :(",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -38,7 +38,7 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmdoM2N5dW1xdzkzajlqc2p4aDZnamtqY3h6cHhzOG00bnJvbTB1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8iC5g6CUO04VyczOod/giphy.gif" />
-          <div className="my-4 text-4xl font-bold">HOORAAAAAY!!! Milujem ťa zlatko!! ;))</div>
+          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
         </>
       ) : (
         <>
@@ -50,20 +50,20 @@ export default function Page() {
                 : "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnQxbGxzMGdraGZ2Mm1wZGRqcHhoMWhuYXdqZHlhcHRzMnZyNTQ0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/a7rcoLmbhO9rWEgkT5/giphy.gif"
             }
           />
-          <h1 className="my-4 text-4xl">Budeš moja valentínka?</h1>
+          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
-              Áno
+              Yes
             </button>
             <button
               onClick={handleNoClick}
               className=" rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
             >
-              {noCount === 0 ? "Nie" : getNoButtonText()}
+              {noCount === 0 ? "No" : getNoButtonText()}
             </button>
           </div>
         </>
