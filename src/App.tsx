@@ -68,6 +68,7 @@ export default function Page() {
           </div>
         </>
       )}
+      <div className="absolute bottom-4 text-sm text-gray-500">Made with ❤️ by Digo</div>
     </div>
   );
 }
